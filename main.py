@@ -43,7 +43,7 @@ class MainWindow(QMainWindow):
         if key == Qt.Key_PageUp and self.map_zoom < 21:
             self.map_zoom += 1
             self.updateLabel()
-        elif key == Qt.Key_PageDown and self.map_zoom > 1:
+        elif key == Qt.Key_PageDown and self.map_zoom >= 1:
             self.map_zoom -= 1
             self.updateLabel()
 
